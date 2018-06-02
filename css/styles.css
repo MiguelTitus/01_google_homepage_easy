@@ -1,0 +1,146 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  rgba(0,0,0,0.87);
+}
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template: 46px minmax(510px, auto) 42px 42px/ 255px minmax(470px, auto) 258px;
+}
+.nav-up{
+  text-align: right;
+  margin: 11px 30px 0px 0px;
+  grid-column: 1 / 4;
+}
+.nav-up ul li{
+  display: inline;
+}
+.nav-up .images{
+  margin-right: 10px;
+}
+.nav-up .gmail{
+  margin-right: 11px;
+}
+.nav-up .apps{
+  background-image: url("../images/apps.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 16px;
+  margin-right: 14px;
+  opacity: 0.6;
+}
+.nav-up .sign-in{
+  color: white;
+  font-weight: bold;
+  background-color: #4285f4;
+  padding: 9px 13px 9px 13px;
+  border-radius: 2px;
+}
+.google{
+  text-align: center;
+  grid-column: 1 / 4;
+}
+.logo{
+  width: 272px;
+  margin: 0 auto;
+  padding-top: 152px;
+  clear: both;
+}
+input{
+  width: 480px;
+  box-sizing: border-box;
+  border-width: thin;
+  border-color: eae#e8d;
+  box-shadow: 0px 2px 2px grey;
+  margin: 28px 20px;
+  border-radius: 4px;
+}
+input[type=text] {
+  font-size: 17px;
+    background-color: white;
+    background-image: url('../images/mike.png');
+    background-size: 24px 24px;
+    background-position: 440px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+.buttons{
+  text-align: center;
+}
+.button{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.57);
+  padding: 11px 15px;
+  margin: 0px 2px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+}
+.button:hover{
+  color: black;
+  border: 1px solid #bec6ce;
+}
+.languages ul{
+  text-align: center;
+  padding: 15px 0px;
+}
+.languages ul li{
+  display: inline;
+  color: #222;
+  padding: 0px 3px;
+}
+.languages ul li a{
+  color: #1a0dab;
+}
+.country{
+  grid-column: 1 / 4;
+  font-size: 15px;
+  background-image: url("../images/background.gif");
+}
+.nav-left{
+  text-align: left;
+  grid-column: 1 / 2;
+  background-image: url("../images/background.gif");
+}
+.empty{
+  background-image: url("../images/background.gif");
+  grid-column: 2 / 3;
+}
+.nav-right{
+  background-image: url("../images/background.gif");
+  text-align: right;
+  grid-column: 3 / 4;
+}
+.nav-right ul{
+  margin-right: 20px;
+}
+.nav-left ul, .country ul{
+  padding-left: 20px;
+}
+.nav-left ul li, .country ul li, .nav-right ul li{
+  display: inline;
+  margin: 10px;
+}
+a, li{
+  color: #666;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
